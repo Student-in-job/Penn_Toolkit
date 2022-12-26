@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F1917BB-734A-48CC-85AE-960538F91E46}</ProjectGuid>
+    <RootNamespace>TexturedSphere</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.32629.160</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\$(platform)</OutDir>
+    <IntDir>Debug\$(platform)</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Debug\$(platform)</OutDir>
+    <IntDir>Debug\$(platform)</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>Debug\$(platform)</OutDir>
+    <IntDir>Debug\$(platform)</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>Debug\$(platform)</OutDir>
+    <IntDir>Debug\$(platform)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\ext;.\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\lib\$(platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>NIDAQmx.lib;hdu.lib;hd.lib;glut32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\ext;.\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>NIDAQmx.lib;hdu.lib;hd.lib;glut32.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\lib\$(platform)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\ext;.\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>NIDAQmx.lib;hdu.lib;hd.lib;glut32.lib</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalLibraryDirectories>..\lib\$(platform)\</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\ext;.\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\lib\$(platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>NIDAQmx.lib;hdu.lib;hd.lib;glut32.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AccSynthHashMatrix.h" />
+    <ClInclude Include="include\autoGenHashMatrix.h" />
+    <ClInclude Include="include\Constants.h" />
+    <ClInclude Include="include\ContactModel.h" />
+    <ClInclude Include="include\foreach.hpp" />
+    <ClInclude Include="include\pugiconfig.hpp" />
+    <ClInclude Include="include\pugixml.hpp" />
+    <ClInclude Include="include\shared.h" />
+    <ClInclude Include="include\sharedInit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AccSynthHashMatrix.cpp" />
+    <ClCompile Include="src\ContactModel.cpp" />
+    <ClCompile Include="src\helper.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\pugixml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="build\XML\Models_ABS Plastic.xml" />
+    <Xml Include="build\XML\Models_Aluminum Foil.xml" />
+    <Xml Include="build\XML\Models_Aluminum.xml" />
+    <Xml Include="build\XML\Models_Artificial Grass.xml" />
+    <Xml Include="build\XML\Models_Athletic Shirt.xml" />
+    <Xml Include="build\XML\Models_Binder.xml" />
+    <Xml Include="build\XML\Models_Blanket.xml" />
+    <Xml Include="build\XML\Models_Book.xml" />
+    <Xml Include="build\XML\Models_Brick 1.xml" />
+    <Xml Include="build\XML\Models_Brick 2.xml" />
+    <Xml Include="build\XML\Models_Bubble Envelope.xml" />
+    <Xml Include="build\XML\Models_Candle.xml" />
+    <Xml Include="build\XML\Models_Canvas 1.xml" />
+    <Xml Include="build\XML\Models_Canvas 2.xml" />
+    <Xml Include="build\XML\Models_Canvas 3.xml" />
+    <Xml Include="build\XML\Models_Carbon Fiber.xml" />
+    <Xml Include="build\XML\Models_Cardboard.xml" />
+    <Xml Include="build\XML\Models_Carpet 1.xml" />
+    <Xml Include="build\XML\Models_Carpet 2.xml" />
+    <Xml Include="build\XML\Models_Carpet 3.xml" />
+    <Xml Include="build\XML\Models_Carpet 4.xml" />
+    <Xml Include="build\XML\Models_CD Sleeve.xml" />
+    <Xml Include="build\XML\Models_Ceramic.xml" />
+    <Xml Include="build\XML\Models_Coffee Filter.xml" />
+    <Xml Include="build\XML\Models_Cork.xml" />
+    <Xml Include="build\XML\Models_Cotton.xml" />
+    <Xml Include="build\XML\Models_Denim.xml" />
+    <Xml Include="build\XML\Models_Dot Paper.xml" />
+    <Xml Include="build\XML\Models_EPDM Foam.xml" />
+    <Xml Include="build\XML\Models_Felt.xml" />
+    <Xml Include="build\XML\Models_Flannel.xml" />
+    <Xml Include="build\XML\Models_Fleece.xml" />
+    <Xml Include="build\XML\Models_Floortile 1.xml" />
+    <Xml Include="build\XML\Models_Floortile 2.xml" />
+    <Xml Include="build\XML\Models_Floortile 3.xml" />
+    <Xml Include="build\XML\Models_Floortile 4.xml" />
+    <Xml Include="build\XML\Models_Floortile 5.xml" />
+    <Xml Include="build\XML\Models_Floortile 6.xml" />
+    <Xml Include="build\XML\Models_Floortile 7.xml" />
+    <Xml Include="build\XML\Models_Folder.xml" />
+    <Xml Include="build\XML\Models_Frosted Acrylic.xml" />
+    <Xml Include="build\XML\Models_Gift Box.xml" />
+    <Xml Include="build\XML\Models_Glitter Paper.xml" />
+    <Xml Include="build\XML\Models_Greeting Card.xml" />
+    <Xml Include="build\XML\Models_Leather 1 Back.xml" />
+    <Xml Include="build\XML\Models_Leather 1 Front.xml" />
+    <Xml Include="build\XML\Models_Leather 2 Back.xml" />
+    <Xml Include="build\XML\Models_Leather 2 Front.xml" />
+    <Xml Include="build\XML\Models_Masking Tape.xml" />
+    <Xml Include="build\XML\Models_MDF.xml" />
+    <Xml Include="build\XML\Models_Metal Mesh.xml" />
+    <Xml Include="build\XML\Models_Metal Shelving.xml" />
+    <Xml Include="build\XML\Models_Microfiber Cloth.xml" />
+    <Xml Include="build\XML\Models_Nitrile Glove.xml" />
+    <Xml Include="build\XML\Models_Nylon Bag.xml" />
+    <Xml Include="build\XML\Models_Nylon Mesh.xml" />
+    <Xml Include="build\XML\Models_Painted Brick.xml" />
+    <Xml Include="build\XML\Models_Painted Wood.xml" />
+    <Xml Include="build\XML\Models_Paper Bag.xml" />
+    <Xml Include="build\XML\Models_Paper Plate 1.xml" />
+    <Xml Include="build\XML\Models_Paper Plate 2.xml" />
+    <Xml Include="build\XML\Models_Pink Foam.xml" />
+    <Xml Include="build\XML\Models_Plastic Mesh 1.xml" />
+    <Xml Include="build\XML\Models_Plastic Mesh 2.xml" />
+    <Xml Include="build\XML\Models_Playing Card.xml" />
+    <Xml Include="build\XML\Models_Pleather.xml" />
+    <Xml Include="build\XML\Models_Polyethylene Foam.xml" />
+    <Xml Include="build\XML\Models_Portfolio Cover.xml" />
+    <Xml Include="build\XML\Models_Resin Carbon Fiber.xml" />
+    <Xml Include="build\XML\Models_Resume Paper.xml" />
+    <Xml Include="build\XML\Models_Rug Slip.xml" />
+    <Xml Include="build\XML\Models_Sandpaper 100.xml" />
+    <Xml Include="build\XML\Models_Sandpaper 220.xml" />
+    <Xml Include="build\XML\Models_Sandpaper 320.xml" />
+    <Xml Include="build\XML\Models_Sandpaper Aluminum Oxide.xml" />
+    <Xml Include="build\XML\Models_Scouring Pad.xml" />
+    <Xml Include="build\XML\Models_Silk 1.xml" />
+    <Xml Include="build\XML\Models_Silk 2.xml" />
+    <Xml Include="build\XML\Models_Stained Wood.xml" />
+    <Xml Include="build\XML\Models_Stone Tile 1.xml" />
+    <Xml Include="build\XML\Models_Stone Tile 2.xml" />
+    <Xml Include="build\XML\Models_Styrofoam.xml" />
+    <Xml Include="build\XML\Models_Tarp.xml" />
+    <Xml Include="build\XML\Models_Terra Cotta.xml" />
+    <Xml Include="build\XML\Models_Textured Cloth.xml" />
+    <Xml Include="build\XML\Models_Textured Metal.xml" />
+    <Xml Include="build\XML\Models_Textured Paper.xml" />
+    <Xml Include="build\XML\Models_Textured Rubber.xml" />
+    <Xml Include="build\XML\Models_Tissue Paper.xml" />
+    <Xml Include="build\XML\Models_Towel.xml" />
+    <Xml Include="build\XML\Models_Velcro Hooks.xml" />
+    <Xml Include="build\XML\Models_Velcro Loops.xml" />
+    <Xml Include="build\XML\Models_Velvet.xml" />
+    <Xml Include="build\XML\Models_Vinyl 1.xml" />
+    <Xml Include="build\XML\Models_Vinyl 2.xml" />
+    <Xml Include="build\XML\Models_Wavy Acrylic.xml" />
+    <Xml Include="build\XML\Models_Wax Paper.xml" />
+    <Xml Include="build\XML\Models_Whiteboard Eraser.xml" />
+    <Xml Include="build\XML\Models_Whiteboard.xml" />
+    <Xml Include="build\XML\Models_Wood.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

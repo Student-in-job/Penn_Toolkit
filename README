@@ -1,0 +1,33 @@
+This code has been tested to run in Visual Studio 2008 on a computer running 64-bit Windows 7 with an Intel HD Graphics 2000 graphics card and a SensAble Phantom Omni. 
+
+When running the code, you can use the following keys to change the texture and behavior of the system:
+
+Key Command List 
+-----------------------------------------
++ --> Scroll Forward Through Textures
+- --> Scroll Backward Through Textures
+F/f --> Toggle Friction ON/OFF
+T/t --> Toggle Texture ON/OFF
+M/m --> Display menu in Terminal
+
+Jump to Texture Group
+----------------------
+0 --> Paper
+1 --> Plastic
+2 --> Fabric
+3 --> Tile
+4 --> Carpet
+5 --> Foam
+6 --> Metal
+7 --> Stone
+8 --> Carbon Fiber
+9 --> Wood
+
+In order to compile and run the code the following library is needed:
+- Boost 
+	http://www.boost.org/ or the Ubuntu repository
+
+In addition, the Open Haptics 3.0 API has to be correctly configured and OpenGL must be working on the machine for the graphics to be rendered and work properly.
+**Please conserve relative pathnames
+
+
