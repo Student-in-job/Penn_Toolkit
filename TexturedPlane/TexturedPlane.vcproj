@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="TexturedSphere"
+	ProjectGUID="{8F1917BB-734A-48CC-85AE-960538F91E46}"
+	RootNamespace="TexturedSphere"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+		<Platform
+			Name="x64"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Debug|x64"
+			ConfigurationType="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="C:\opt\boost\boost_1_54_0;&quot;C:\Program Files\SensAble\3DTouch\include&quot;;&quot;C:\Program Files\SensAble\3DTouch\utilities\include&quot;;&quot;$(ProjectDir)\include&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="&quot;c:\Program Files\SensAble\3DTouch\utilities\lib\x64\Release\glut32.lib&quot;"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|x64"
+			OutputDirectory="$(SolutionDir)\$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)\$(ConfigurationName)"
+			ConfigurationType="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="C:\opt\boost\boost_1_54_0;&quot;$(3DTOUCH_BASE)\utilities\include&quot;;&quot;$(3DTOUCH_BASE)\include&quot;;&quot;$(ProjectDir)\include&quot;"
+				PreprocessorDefinitions="WIN32;WIN64;_DEBUG;_CONSOLE"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				LinkLibraryDependencies="true"
+				UseUnicodeResponseFiles="true"
+				AdditionalDependencies="glut32.lib QH.lib hd.lib hdu.lib QHGLUTWrapper.lib hl.lib hlu.lib OpenGL32.lib glu32.lib"
+				ShowProgress="0"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;c:\Program Files\SensAble\3DTouch\utilities\lib\$(PlatformName)\$(ConfigurationName)&quot;;&quot;c:\Program Files\SensAble\3DTouch\lib\$(PlatformName)&quot;"
+				IgnoreAllDefaultLibraries="false"
+				DelayLoadDLLs=""
+				TargetMachine="17"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\include\AccSynthHashMatrix.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\autoGenHashMatrix.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\Constants.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\ContactModel.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\foreach.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\pugiconfig.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\pugixml.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\include\shared.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\sharedInit.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\src\AccSynthHashMatrix.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\ContactModel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\helper.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\src\pugixml.cpp"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\build\XML\Models_ABS Plastic.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Aluminum Foil.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Aluminum.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Artificial Grass.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Athletic Shirt.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Binder.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Blanket.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Book.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Brick 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Brick 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Bubble Envelope.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Candle.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Canvas 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Canvas 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Canvas 3.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Carbon Fiber.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Cardboard.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Carpet 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Carpet 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Carpet 3.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Carpet 4.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_CD Sleeve.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Ceramic.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Coffee Filter.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Cork.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Cotton.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Denim.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Dot Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_EPDM Foam.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Felt.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Flannel.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Fleece.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 3.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 4.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 5.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 6.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Floortile 7.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Folder.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Frosted Acrylic.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Gift Box.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Glitter Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Greeting Card.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Leather 1 Back.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Leather 1 Front.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Leather 2 Back.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Leather 2 Front.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Masking Tape.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_MDF.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Metal Mesh.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Metal Shelving.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Microfiber Cloth.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Nitrile Glove.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Nylon Bag.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Nylon Mesh.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Painted Brick.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Painted Wood.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Paper Bag.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Paper Plate 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Paper Plate 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Pink Foam.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Plastic Mesh 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Plastic Mesh 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Playing Card.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Pleather.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Polyethylene Foam.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Portfolio Cover.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Resin Carbon Fiber.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Resume Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Rug Slip.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Sandpaper 100.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Sandpaper 220.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Sandpaper 320.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Sandpaper Aluminum Oxide.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Scouring Pad.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Silk 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Silk 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Stained Wood.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Stone Tile 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Stone Tile 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Styrofoam.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Tarp.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Terra Cotta.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Textured Cloth.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Textured Metal.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Textured Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Textured Rubber.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Tissue Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Towel.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Velcro Hooks.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Velcro Loops.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Velvet.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Vinyl 1.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Vinyl 2.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Wavy Acrylic.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Wax Paper.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Whiteboard Eraser.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Whiteboard.xml"
+			>
+		</File>
+		<File
+			RelativePath=".\build\XML\Models_Wood.xml"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
