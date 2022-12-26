@@ -25,7 +25,8 @@ An in-depth paragraph about your project and overview of use.
 ```
 git clone https://github.com/Student-in-job/Penn_Toolkit.git
 ```
-* Go into Penn_Toolkit folder and open TexturedSphere.sln
+* Go into Penn_Toolkit folder and open Penn_Toolkit.sln
+* Original Project TexturedSphere
 
 ## Authors
 
