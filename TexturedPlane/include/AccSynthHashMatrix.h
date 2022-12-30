@@ -11,7 +11,7 @@ Report bugs to Heather Culbertson (hculb@seas.upenn.edu, +1 215-573-6748) or Kat
 This code is based on the original TexturePad haptic rendering system designed by Joseph M. Romano.
 ************************************************************************************************************************************/
 
-#include "shared.h"
+//#include "shared.h"
 #include <math.h>
 
 #ifndef _ACCSYNTHHASHENTRY_H_

@@ -24,8 +24,8 @@ TexturedSphere.cpp
 #include <cstdio>
 #include <cmath>
 #include <time.h>
-#include "shared.h"
-#include "sharedInit.h"
+//#include "shared.h"
+//#include "sharedInit.h"
 #include "AccSynthHashMatrix.h"
 #include "autoGenHashMatrix.h"
 #include <HD/hd.h>
@@ -48,7 +48,6 @@ TexturedSphere.cpp
 
 #include "Constants.h"
 #include "ContactModel.h"
-#include "libDAQmx.h"
 
 /*******************************************************************************
 Globals, declarations
@@ -108,10 +107,6 @@ std::vector <float> excitationHist;
 bool debug_flag = false;
 int loopCount = 0;
 int debugLoopCount = 0;
-
-// Extern declarations
-bool running = false;
-double outData[1000];
 
 /*******************************************************************************
 Get data modified by haptics thread, copy them into data that can be
@@ -912,16 +907,3 @@ Heather Culbertson, Juan Jose Lopez Delgado, and Katherine J. Kuchenbecker. One 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS, CONTRIBUTORS, AND THE TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER, CONTRIBUTORS OR THE TRUSTEES OF THE UNIVERSITY OF PENNSYLVANIA BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ************************************************************************************************************************************/
-
-#ifdef ASYNC_READ
-void DoAction(float* data) {}
-#endif
-
-extern void SetProgress(const char* value)
-{
-    printf("\n %s \n", value);
-}
-extern void SetError(const char* value)
-{
-    printf("\n Error: %s \n", value);
-}
